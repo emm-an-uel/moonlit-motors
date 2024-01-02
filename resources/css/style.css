@@ -111,6 +111,31 @@ header a:hover {
   text-align: center;
 }
 
+/* Gallery */
+.gallery-container {
+  padding: 2rem 1rem;
+}
+
+.gallery-container h3 {
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery .img-container {
+  margin: 0.3rem;
+  min-width: 250px;
+  max-width: 24%;
+}
+
+.gallery img {
+  width: 100%;
+}
+
 /* Footer */
 footer {
   padding: 2rem 1rem 4rem 1rem;
