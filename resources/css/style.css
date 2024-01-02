@@ -1,0 +1,125 @@
+/* General */
+html {
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+  --primaryblue: #02224f;
+  --darkblue: #021027;
+  --gray: #dadce0;
+  --bluegray: #6f8096;
+  --secondaryblue: #84abe3;
+  --tertiaryblue: #759fd9;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#body {
+  position: relative;
+  top: 74.19px;
+}
+
+/* Header */
+header {
+  background-color: var(--darkblue);
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 11;
+}
+
+header #logo-container {
+  padding: 1rem;
+  width: 6rem;
+}
+
+header img {
+  width: 100%;
+  filter: invert(90%); /* change color from black to white for contrast against dark blue background */
+}
+
+header #nav-bar-container {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+header li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--gray);
+  transition: color 0.3s;
+}
+
+header a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+/* About */
+#about {
+  display: flex; 
+  background-color: var(--darkblue);
+  padding: 3rem 0 5rem 0;
+}
+
+#about-left,
+#about-right {
+  width: 50%;
+}
+
+#about-left {
+  position: relative;
+  left: 8%;
+  padding: 1rem;
+}
+
+#about-left img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+#about-right {
+  background-color: #ffffff90;
+  margin-top: 15%;
+  position: relative;
+  right: 8%;
+  z-index: 10;
+  height: fit-content;
+  border-radius: 4px;
+  padding: 2rem;
+}
+
+#about h1 {
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  padding: 2rem 1rem 4rem 1rem;
+  background-color: var(--gray);
+}
+
+footer h5 {
+  margin: 0.1rem 0 0.1rem 0.4rem;
+}
+
+footer .left {
+  float: left;
+}
+
+footer .right {
+  float: right;
+}
