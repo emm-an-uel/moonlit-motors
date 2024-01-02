@@ -84,6 +84,11 @@ header a:hover {
   position: relative;
   left: 8%;
   padding: 1rem;
+  transition: width 0.75s;
+}
+
+#about-left:hover {
+  width: 60%;
 }
 
 #about-left img {
